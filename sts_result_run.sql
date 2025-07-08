@@ -1,0 +1,22 @@
+SELECT TOP (1000) [pk]
+      ,[fk_sts_result]
+      ,[fk_financial_year]
+      ,[fk_sts_result_run_parent]
+      ,[month]
+      ,[superseded_flag]
+      ,[result_locked_flag]
+      ,[cycle]
+      ,[result_datetime]
+      ,[result_rowcount]
+      ,[archive_flag]
+      ,[accrual_flag]
+      ,[user_mod_ts]
+      ,[user_add]
+      ,[user_add_ts]
+      ,[user_mod]
+      ,[accrual_date]
+      ,[rowid]
+  FROM [AQTEST].[dbo].[sts_result_run]
+  where [fk_sts_result] = 7
+  and [fk_financial_year] = 202425
+  and [month] = 6
